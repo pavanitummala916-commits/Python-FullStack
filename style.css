@@ -1,0 +1,29 @@
+/* ID Selector(#) */
+#One {
+  color: antiquewhite;
+}
+#Two {
+  color: blueviolet;
+}
+/* class Selector */
+.AI {
+  color: darkorange;
+}
+.DS {
+  color: aquamarine;
+}
+.CSE {
+  color: darkolivegreen;
+}
+#T.Pavani {
+  color: blue;
+}
+p {
+  color: red;
+}
+h1 {
+  color: hotpink;
+}
+h2 {
+  color: green;
+}

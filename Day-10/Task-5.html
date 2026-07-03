@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navigation bar</title>
+
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        background-color: lightgreen;
+        padding: 10px 0;
+      }
+
+      .logo {
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+
+      .quicklinks {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      .quicklinks > li {
+        background-color: rgb(122, 119, 119);
+        list-style-type: none;
+        padding: 15px;
+        color: white;
+        font-weight: bolder;
+        border: 1px solid black;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .quicklinks > li:hover {
+        background-color: rgb(58, 56, 56);
+        color: red;
+      }
+
+      @media (min-width: 500px) {
+        .navigation {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .logo {
+          margin: 0 0 0 40px;
+        }
+
+        .quicklinks {
+          flex-direction: row;
+          justify-content: flex-end;
+          margin-right: 40px;
+          width: auto;
+        }
+
+        .quicklinks > li {
+          width: auto;
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+        }
+      }
+
+      @media (min-width: 1000px) {
+        .navigation {
+          padding: 15px 0;
+        }
+
+        .logo h1 {
+          font-size: 32px;
+        }
+
+        .quicklinks > li {
+          padding: 15px 25px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navigation">
+      <div class="logo">
+        <h1>LOGO</h1>
+      </div>
+
+      <ul class="quicklinks">
+        <li>Home</li>
+        <li>About</li>
+        <li>Career</li>
+        <li>Help</li>
+        <li>More</li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      img {
+        width: 500px;
+        animation: load 5s linear 0s 1 normal forwards;
+      }
+
+      @keyframes load {
+        from {
+          transform: translateX(-500px);
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+          transform: translateX(500px);
+        }
+      }
+
+      h1 {
+        text-transform: uppercase;
+        font-size: 100px;
+        text-align: center;
+        color: red;
+        animation: entry 5s linear 0s 1 normal;
+      }
+      @keyframes entry {
+        from {
+          transform: translateY(100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="catfish.jpg" alt="error" />
+
+    <h1>Animals</h1>
+  </body>
+</html>

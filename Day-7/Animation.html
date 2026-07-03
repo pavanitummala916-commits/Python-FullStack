@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salads</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        background: yellowgreen;
+      }
+
+      .logo {
+        font-size: 30px;
+        font-weight: bold;
+        color: yellowgreen;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+
+      .hero {
+        background-color: yellowgreen;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px;
+      }
+
+      .text {
+        width: 50%;
+      }
+
+      .text h3 {
+        font-size: 24px;
+      }
+
+      .text h1 {
+        font-size: 55px;
+        margin: 15px 0;
+      }
+
+      .text p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        background: black;
+        color: green;
+        text-decoration: none;
+        padding: 12px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 30px;
+      }
+
+      .image img {
+        width: 320px;
+        border-radius: 20px;
+      }
+      .outler.img{
+        animation: rot 5s linear 0s infinite normal both
+      }
+      @keyframes rot{
+        from
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">Salads</div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Pages</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="text">
+        <h3>Fresh Healthy</h3>
+        <h1>Delicious Salads</h1>
+
+        <p>
+          Healthy foods to eat everyday, Tasty and healthy vegetables salad with
+          fresh tomatoes, coriander leaves and more.
+        </p>
+
+        <a href="#" class="button">Order Now</a>
+      </div>
+
+      <div class="image">
+        <img
+          src="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=500&q=80"
+          alt="error"
+        />
+      </div>
+    </section>
+  </body>
+</html>

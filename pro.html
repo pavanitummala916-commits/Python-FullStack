@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merchant Registration UI</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f5f7fa;
+        padding: 40px 0;
+      }
+
+      .container {
+        width: 420px;
+        margin: auto;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-left: 6px solid #00baf2;
+      }
+
+      h2 {
+        color: #00baf2;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 6px;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+      }
+
+      button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        border: none;
+        background: #00baf2;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0095d9;
+      }
+
+      .arrow {
+        text-align: center;
+        font-size: 35px;
+        color: #00baf2;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Screen 1 -->
+      <div class="card">
+        <h2>📱 Mobile & OTP</h2>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter Mobile Number" />
+
+        <label>OTP</label>
+        <input type="text" placeholder="Enter 6-digit OTP" />
+
+        <button>Proceed Securely</button>
+      </div>
+
+     
+
+      <!-- Screen 2 -->
+      <div class="card">
+        <h2>👤 Personal Profile</h2>
+
+        <label>Full Name (as per PAN)</label>
+        <input type="text" placeholder="Enter Full Name" />
+
+        <label>Date of Birth</label>
+        <input type="date" />
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter Email" />
+
+        <button>Next</button>
+      </div>
+
+     
+
+      <!-- Screen 3 -->
+      <div class="card">
+        <h2>🏦 Business & KYC</h2>
+
+        <label>Business / Display Name</label>
+        <input type="text" placeholder="Business Name" />
+
+        <label>Bank Account Number</label>
+        <input type="text" placeholder="Account Number" />
+
+        <label>IFSC Code</label>
+        <input type="text" placeholder="IFSC Code" />
+
+        <label>PAN Number</label>
+        <input type="text" placeholder="PAN Number" />
+
+        <label>Aadhaar Number</label>
+        <input type="text" placeholder="Aadhaar Number" />
+
+        <button>Register Now</button>
+      </div>
+    </div>
+  </body>
+</html>

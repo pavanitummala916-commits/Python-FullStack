@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      #display-block {
+        width: 90%;
+        grid-column: span 4;
+        display: flex;
+        justify-content: end;
+        border: 3px solid black;
+        margin: 10px;
+      }
+      #display-block h1 {
+        margin: 0px;
+        padding: 0px;
+        margin-right: 5px;
+        height: 30px;
+      }
+      .box {
+        width: 50vw;
+        height: 50vh;
+        border: 3px solid black;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .box > button {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div id="display-block">
+        <h1 id="display"></h1>
+      </div>
+      <button onclick="ac()">AC</button>
+      <button onclick="removeLastch()">C</button>
+      <button onclick="enterVal('%')">%</button>
+      <button onclick="enterVal('+')">+</button>
+      <button onclick="enterVal('1')">1</button>
+      <button onclick="enterVal('2')">2</button>
+      <button onclick="enterVal('3')">3</button>
+      <button onclick="enterVal('-')">-</button>
+      <button onclick="enterVal('4')">4</button>
+      <button onclick="enterVal('5')">5</button>
+      <button onclick="enterVal('6')">6</button>
+      <button onclick="enterVal('*')">*</button>
+      <button onclick="enterVal('7')">7</button>
+      <button onclick="enterVal('8')">8</button>
+      <button onclick="enterVal('9')">9</button>
+      <button onclick="enterVal('/')">/</button>
+      <button onclick="enterVal('.')">.</button>
+      <button onclick="enterVal('0')">0</button>
+      <button onclick="calc()">=</button>
+    </div>
+    <script>
+      function enterVal(ch) {
+        let output = document.getElementById("display");
+        let updated = output.innerText + ch;
+        output.innerText = updated;
+      }
+
+      function calc() {
+        let output = document.getElementById("display");
+        let updated = eval(output.innerText);
+        output.innerText = updated;
+      }
+
+      function ac() {
+        let output = (document.getElementById("display").innerText = "");
+      }
+
+      function removeLastch() {
+        //7+8
+        let output = document.getElementById("display");
+        let text = output.innerText;
+        let updated = text.slice(0, text.length - 1);
+        output.innerText = updated;
+      }
+    </script>
+  </body>
+</html>

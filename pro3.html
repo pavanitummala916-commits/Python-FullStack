@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merchant Registration</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #eef3f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+
+      .container {
+        width: 600px;
+      }
+
+      .form-box {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        text-align: center;
+        color: #00baf2;
+        margin-bottom: 25px;
+      }
+
+      .section {
+        margin-top: 25px;
+        color: #00baf2;
+        border-bottom: 2px solid #00baf2;
+        padding-bottom: 5px;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      .gender {
+        margin-top: 10px;
+      }
+
+      .gender input {
+        width: auto;
+        margin-right: 5px;
+      }
+
+      button {
+        width: 100%;
+        margin-top: 25px;
+        padding: 12px;
+        background: #00baf2;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #008fd1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-box">
+        <h1>Merchant Registration</h1>
+
+        <h3 class="section">Mobile Verification</h3>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter Mobile Number" required />
+
+        <label>OTP</label>
+        <input type="text" placeholder="Enter OTP" required />
+
+        <h3 class="section">Personal Details</h3>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter Full Name" required />
+
+        <label>Date of Birth</label>
+        <input type="date" required />
+
+        <label>Gender</label>
+
+        <div class="gender">
+          <input type="radio" name="gender" /> Male
+          <input type="radio" name="gender" /> Female
+          <input type="radio" name="gender" /> Other
+        </div>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email Address" required />
+
+        <label>Password</label>
+        <input type="password" placeholder="Create Password" required />
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" required />
+
+        <h3 class="section">Business Details</h3>
+
+        <label>Business Name</label>
+        <input type="text" placeholder="Business Name" required />
+
+        <label>Business Type</label>
+
+        <select required>
+          <option value="">Select Business Type</option>
+          <option>Retail Shop</option>
+          <option>Restaurant</option>
+          <option>Medical Store</option>
+          <option>Super Market</option>
+          <option>Electronics</option>
+          <option>Other</option>
+        </select>
+
+        <label>Business Address</label>
+        <textarea rows="4" placeholder="Enter Business Address"></textarea>
+
+        <h3 class="section">Bank & KYC Details</h3>
+
+        <label>Bank Account Number</label>
+        <input type="text" placeholder="Account Number" required />
+
+        <label>IFSC Code</label>
+        <input type="text" placeholder="IFSC Code" required />
+
+        <label>PAN Number</label>
+        <input type="text" placeholder="ABCDE1234F" required />
+
+        <label>Aadhaar Number</label>
+        <input type="text" placeholder="1234 5678 9012" required />
+
+        <label>Upload PAN Card</label>
+        <input type="file" />
+
+        <label>Upload Aadhaar Card</label>
+        <input type="file" />
+
+        <button type="submit">Register Merchant</button>
+      </form>
+    </div>
+  </body>
+</html>
